@@ -48,5 +48,5 @@ Remember, each time you make updates to your documentation, run `mkdocs gh-deplo
 I hope this guide provides a clear introduction to MkDocs and its capabilities, Uncle Moe. Feel free to reach out if you have any questions or need further clarifications. Enjoy documenting!
 
 
-##[About Us](about.md)
-[About Us](about.md)
+##[Linking](links.md)
+[Links](links.md)

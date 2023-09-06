@@ -1,1 +1,6 @@
-site_name: My Docs
+site_name: Austin Portfolio
+
+nav:
+  - For Moe: 'index.md'
+  - Linking Pages: 'links.md'
+
