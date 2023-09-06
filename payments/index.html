@@ -78,18 +78,32 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
+            <li class="nav-item" data-level="1"><a href="#integrating-paypal-payment-in-mkdocs" class="nav-link">Integrating PayPal Payment in MkDocs</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1-create-a-paypal-button" class="nav-link">1. Create a PayPal Button</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-obtain-the-button-code" class="nav-link">2. Obtain the Button Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-embed-into-mkdocs" class="nav-link">3. Embed into MkDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#4-test-the-integration" class="nav-link">4. Test the Integration</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
             <li class="nav-item" data-level="2"><a href="#5-deployment" class="nav-link">5. Deployment</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
             <li class="nav-item" data-level="2"><a href="#important-considerations" class="nav-link">Important Considerations</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -103,39 +117,29 @@
 title: Integrating PayPal Payment in MkDocs
 description: A step-by-step guide on how to add a PayPal &quot;Buy Now&quot; button into your MkDocs website.
 ---
-
-# Integrating PayPal Payment in MkDocs
-
-While MkDocs is primarily designed for creating documentation, it's possible to add static elements like a PayPal &quot;Buy Now&quot; button to your pages. Here's how you can integrate such a button:
-
-## 1. Create a PayPal Button
-
-- Log in to your **PayPal account**.
-- Navigate to `Tools &gt; All Tools &gt; PayPal buttons`.
-- Select &quot;Create new button&quot;.
-- Opt for the &quot;Buy Now&quot; button type.
-- Fill out the necessary item details and adjust its appearance as required.
-- Once done, click &quot;Create Button&quot;.
-
-## 2. Obtain the Button Code
-
-After creation, PayPal will provide a button code. 
-
-You'll find two primary types: 
-- A script-based solution
-- A URL-only version 
-
-For MkDocs, the URL-only method is simpler. Copy the URL, which should resemble:
-
 </code></pre>
-<p>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE</p>
-<pre><code>
-## 3. Embed into MkDocs
-
-Incorporate the button into your desired MkDocs content using a Markdown link:
-
-```markdown
-[Buy Now with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE)
+<h1 id="integrating-paypal-payment-in-mkdocs">Integrating PayPal Payment in MkDocs</h1>
+<p>While MkDocs is primarily designed for creating documentation, it's possible to add static elements like a PayPal "Buy Now" button to your pages. Here's how you can integrate such a button:</p>
+<h2 id="1-create-a-paypal-button">1. Create a PayPal Button</h2>
+<ul>
+<li>Log in to your <strong>PayPal account</strong>.</li>
+<li>Navigate to <code>Tools &gt; All Tools &gt; PayPal buttons</code>.</li>
+<li>Select "Create new button".</li>
+<li>Opt for the "Buy Now" button type.</li>
+<li>Fill out the necessary item details and adjust its appearance as required.</li>
+<li>Once done, click "Create Button".</li>
+</ul>
+<h2 id="2-obtain-the-button-code">2. Obtain the Button Code</h2>
+<p>After creation, PayPal will provide a button code. </p>
+<p>You'll find two primary types: 
+- A script-based solution
+- A URL-only version </p>
+<p>For MkDocs, the URL-only method is simpler. Copy the URL, which should resemble:</p>
+<pre><code>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE
+</code></pre>
+<h2 id="3-embed-into-mkdocs">3. Embed into MkDocs</h2>
+<p>Incorporate the button into your desired MkDocs content using a Markdown link:</p>
+<pre><code class="language-markdown">[Buy Now with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE)
 </code></pre>
 <p>Alternatively, use an image as a button:</p>
 <pre><code class="language-markdown">[![PayPal](path/to/your/paypal_image.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE)
