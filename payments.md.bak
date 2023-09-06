@@ -7,7 +7,7 @@ Certainly! If you're looking to incorporate the tutorial directly into your MkDo
 title: Integrating PayPal Payment in MkDocs
 description: A step-by-step guide on how to add a PayPal "Buy Now" button into your MkDocs website.
 ---
-
+```
 # Integrating PayPal Payment in MkDocs
 
 While MkDocs is primarily designed for creating documentation, it's possible to add static elements like a PayPal "Buy Now" button to your pages. Here's how you can integrate such a button:
