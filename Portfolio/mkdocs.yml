@@ -3,4 +3,12 @@ site_name: Austin Portfolio
 nav:
   - For Moe: 'index.md'
   - Linking Pages: 'links.md'
+  - Payments: 'payments.md'
 
+plugins:
+  - search:
+      lang: ['en']  # List of languages. You can add others if needed.
+      separator: '[\s\-]+'
+      index_options:
+          trimmer: lunr.trimmer
+          tokenizer: 'lunr'  # You can adjust this for custom tokenization.
