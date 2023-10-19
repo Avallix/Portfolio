@@ -8,11 +8,12 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Linking Pages - Austin Portfolio</title>
+        <title>Senior Design - Austin Krekula</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../css/custom.css" rel="stylesheet">
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap.min.js" defer></script>
@@ -23,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">Austin Portfolio</a>
+                <a class="navbar-brand" href="..">Austin Krekula</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,11 +34,23 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Linking Pages</a>
+                            <li class="navitem">
+                                <a href="../employment/" class="nav-link">Employment</a>
                             </li>
                             <li class="navitem">
-                                <a href="../payments/" class="nav-link">Payments</a>
+                                <a href="../projects/" class="nav-link">Projects</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Senior Design</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../reflections/" class="nav-link">Reflections</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../resume/" class="nav-link">Resume</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../contact/" class="nav-link">Contact</a>
                             </li>
                         </ul>
 
@@ -48,12 +61,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../projects/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../payments/" class="nav-link">
+                                <a rel="next" href="../reflections/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -75,21 +88,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#linking-between-pages-in-mkdocs" class="nav-link">Linking Between Pages in MkDocs</a>
+            <li class="nav-item" data-level="1"><a href="#integrating-paypal-payment-in-mkdocs" class="nav-link">Integrating PayPal Payment in MkDocs</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#understanding-the-directory-structure" class="nav-link">Understanding the Directory Structure</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#linking-methodology" class="nav-link">Linking Methodology</a>
+            <li class="nav-item" data-level="2"><a href="#1-create-a-paypal-button" class="nav-link">1. Create a PayPal Button</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#verification-test-your-links" class="nav-link">Verification: Test Your Links</a>
+            <li class="nav-item" data-level="2"><a href="#2-obtain-the-button-code" class="nav-link">2. Obtain the Button Code</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#concluding-advice" class="nav-link">Concluding Advice</a>
+            <li class="nav-item" data-level="2"><a href="#3-embed-into-mkdocs" class="nav-link">3. Embed into MkDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-test-the-integration" class="nav-link">4. Test the Integration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#5-deployment" class="nav-link">5. Deployment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#important-considerations" class="nav-link">Important Considerations</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -101,65 +122,53 @@
                     <div class="col-md-9" role="main">
 
 <pre><code class="language-markdown">---
-title: Linking Between Pages in MkDocs
-description: A guide on how to add and manage internal links in MkDocs.
+title: Integrating PayPal Payment in MkDocs
+description: A step-by-step guide on how to add a PayPal &quot;Buy Now&quot; button into your MkDocs website.
 ---
 </code></pre>
-<h1 id="linking-between-pages-in-mkdocs">Linking Between Pages in MkDocs</h1>
-<p>Creating navigable documentation is crucial for user experience. Internal links between various pages ensure smooth transitions. This guide elucidates the process of creating and managing such links in MkDocs.</p>
-<h2 id="understanding-the-directory-structure">Understanding the Directory Structure</h2>
-<p>Your <code>docs</code> directory might resemble:</p>
-<pre><code>docs/
-├── index.md
-├── about.md
-├── projects/
-│   ├── project1.md
-│   └── project2.md
-└── contact.md
-</code></pre>
-<p>This structure dictates how you'll establish links.</p>
-<h2 id="linking-methodology">Linking Methodology</h2>
-<h3 id="1-main-directory-links"><strong>1. Main Directory Links</strong></h3>
-<p>To reference pages in the primary directory:</p>
-<pre><code class="language-markdown">[About Us](about.md)
-</code></pre>
-<h3 id="2-links-to-subdirectories"><strong>2. Links to Subdirectories</strong></h3>
-<p>To link to a page inside a subdirectory from the primary directory:</p>
-<pre><code class="language-markdown">[Project 1 Overview](projects/project1.md)
-</code></pre>
-<h3 id="3-subdirectory-to-subdirectory"><strong>3. Subdirectory-to-Subdirectory</strong></h3>
-<p>From a page inside a subdirectory:</p>
+<h1 id="integrating-paypal-payment-in-mkdocs">Integrating PayPal Payment in MkDocs</h1>
+<p>While MkDocs is primarily designed for creating documentation, it's possible to add static elements like a PayPal "Buy Now" button to your pages. Here's how you can integrate such a button:</p>
+<h2 id="1-create-a-paypal-button">1. Create a PayPal Button</h2>
 <ul>
-<li>
-<p>Linking back to the primary directory:
-  <code>markdown
-  [Return to Home](../index.md)</code></p>
-</li>
-<li>
-<p>Linking within the same subdirectory:
-  <code>markdown
-  [See Project 2](project2.md)</code></p>
-</li>
+<li>Log in to your <strong>PayPal account</strong>.</li>
+<li>Navigate to <code>Tools &gt; All Tools &gt; PayPal buttons</code>.</li>
+<li>Select "Create new button".</li>
+<li>Opt for the "Buy Now" button type.</li>
+<li>Fill out the necessary item details and adjust its appearance as required.</li>
+<li>Once done, click "Create Button".</li>
 </ul>
-<h3 id="4-header-anchors"><strong>4. Header Anchors</strong></h3>
-<p>Headers can also be anchor points. Given a header:</p>
-<pre><code class="language-markdown">## Introduction
+<h2 id="2-obtain-the-button-code">2. Obtain the Button Code</h2>
+<p>After creation, PayPal will provide a button code. </p>
+<p>You'll find two primary types: 
+- A script-based solution
+- A URL-only version </p>
+<p>For MkDocs, the URL-only method is simpler. Copy the URL, which should resemble:</p>
+<pre><code>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE
 </code></pre>
-<p>Directly link to this section:</p>
-<pre><code class="language-markdown">[Navigate to Introduction](about.md#introduction)
+<h2 id="3-embed-into-mkdocs">3. Embed into MkDocs</h2>
+<p>Incorporate the button into your desired MkDocs content using a Markdown link:</p>
+<pre><code class="language-markdown">[Buy Now with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE)
 </code></pre>
-<h2 id="verification-test-your-links">Verification: Test Your Links</h2>
-<p>Post-creation, always preview:</p>
-<pre><code class="language-bash">mkdocs serve
+<p>Alternatively, use an image as a button:</p>
+<pre><code class="language-markdown">[![PayPal](path/to/your/paypal_image.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YOUR_UNIQUE_ID_HERE)
 </code></pre>
-<p>Visit <code>http://127.0.0.1:8000/</code> in your browser. Test every link to validate its functionality.</p>
-<h2 id="concluding-advice">Concluding Advice</h2>
-<p>Maintain vigilance over internal links, especially when restructuring or altering pages. Functional links are the backbone of efficient documentation.</p>
-<p>After verification, always deploy your updated documentation, ensuring a seamless experience for all readers.</p>
-<hr />
-<p>For integration, save the content as <code>linking_guide.md</code> in your <code>docs</code> directory. Incorporate it into your <code>mkdocs.yml</code> under the <code>nav</code> section for it to appear in your documentation's navigation.
+<h2 id="4-test-the-integration">4. Test the Integration</h2>
+<p>After integrating, activate your MkDocs site using:</p>
+<pre><code>mkdocs serve
+</code></pre>
+<p>Ensure the payment link redirects to PayPal correctly and showcases the intended item and its price.</p>
+<h2 id="5-deployment">5. Deployment</h2>
+<p>Once tested, deploy your MkDocs site. If you're utilizing a platform like GitHub Pages, ensure your payment button or link functions post-deployment.</p>
+<h2 id="important-considerations">Important Considerations</h2>
+<ul>
+<li>This approach requires users to leave your MkDocs site to finalize their transaction on PayPal's platform.</li>
+<li>For a more seamless experience with shopping carts or multiple items, consider an e-commerce-specific platform.</li>
+<li>Always prioritize user security. Use trustworthy payment gateways and ensure transaction-related pages operate over HTTPS.</li>
+</ul>
+<p>Remember, while this guide centers on PayPal, similar principles can be applied to other payment gateways like Stripe or Square. Always consult the official documentation of your chosen payment platform.
 ```</p>
-<p>After you've added the page, you can include it in your <code>mkdocs.yml</code> file to ensure it's part of your site's navigation. If you need further assistance with that, let me know!</p></div>
+<hr />
+<p>You can save the above content into a <code>.md</code> file, for instance, <code>paypal_integration.md</code>, and place it within the <code>docs</code> directory of your MkDocs project. Ensure you also add the new page to the <code>nav</code> section of your <code>mkdocs.yml</code> file to make it accessible from the site's navigation menu.</p></div>
             </div>
         </div>
 

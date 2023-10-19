@@ -1,52 +1,40 @@
-# Welcome to MkDocs 101, Uncle Moe!
+# <h1 class="centered-header">Welcome!</h1>
 
-Hello Uncle Moe! Austin has set up this guide especially for you to introduce you to the wonders of MkDocs. By the end of this guide, you'll have a basic understanding of setting up MkDocs and hosting the documentation on GitHub.
+## Who am I?
 
-## What is MkDocs?
+My name is Austin Krekula, I was born in Fayetteville NC in 1997. I'm the first of 4 children. I am a soldier in the Iowa Army National Guard, its been a little over 6 years since I joined. I'm currently in pursuit of a bachelors degree in Cyber Security Engineering at ISU and hoping to soon start a Masters in the same.
 
-MkDocs is a fast, simple, and downright gorgeous static site generator that's geared towards building project documentation. Documentation source files are written in Markdown, and configured with a single YAML configuration file.
+## Passions
+I really like reading, I love to read theology, poetry, fiction, I study other religions (Taoism is my favorite to study), philosophy,
+and psychology, culture, history, and studying random things. My father, Nathan Krekula, was in the Army as well. Because of this I've
+travled around most of the continental US. I really enjoy listening to all kinds of music, but I especially love jazz, swing, christian,
+and French love songs. Some of my favorite activities are working out, going on walks, reading, studying random things, playing board games, and playing volleyball. I'm an engineer so i also love to find solutions to problems, so I always try to think of ways to solve problems for people.
+I really love spending time with my friends and family. We do things like game nights, movie nights, and. I'm active in my church, I help
+with sound and slides, I attend 2 bible studies a week, go to a Thursday night college student service, and attend church every Sunday. My
+friends and I all eat lunch together every Sunday. But I like to spend at least an equal amount of time alone or with one or two other
+people. I love to read about culture, theology, psychology, philosophy, history, and self help books. I also love good poetry and good 
+fiction. I study other religions (Taoism is my favorite to study). I cook SUPER well. I work out 3 times a week, usually early in the
+morning. I love going on walks.
 
-### Static vs. Dynamic Sites:
+### Hopes and Dreams
 
-- **Static Sites**: These are pre-rendered HTML files. They're fast, secure, and can be easily hosted on platforms like GitHub Pages. MkDocs generates static sites.
-  
-- **Dynamic Sites**: Unlike static sites, dynamic sites generate content in real-time. Think of platforms like WordPress. They can be more flexible but also require more resources.
+My biggest future dream is to be a father and have a family. My second biggest dream is to farm goats!
 
-## Setting Up MkDocs:
+ I love playing games,
+board games and sports. Volleyball 🏐 IS MY FAVORITE. I cook SUPER well. You'll love my food 😁. I listen to huge amounts of music of all
+kinds! But i especially love jazz, swing, christian and French love songs. But i hate rap and ragaeton. I love deep conversations about
+anything, I'm passionate about my relationships with people and with God. I really love talking to people and getting them to open up their
+hearts. Sometimes that's pretty hard to do though. I am a soldier in the Iowa Army National Guard, its been a little over 5 years since I joined. 
+I study Cyber Security Engineering at ISU. Moved away from my family on 2017 and I've been independent since then. My dad was in the Army
+as well, so I don't really have a home state. I've moved around the US over 22 times, but I was born in Fayetteville NC. I'm the first of 4
+children. I'm an engineer so i also love to find solutions to problems, so I always try to think of ways to solve problems for people.
+Recently I've been thinking a lot about trust. One of my biggest dreams when I was a little boy was to be just like my dad. I think it's
+changed a lot since then. But one thing that stayed with me forever was the dream to be a husband and a father. I've always wanted a
+family of my own all my life. I want to love my wife and raise our kids well to follow Christ. I want to live my life in a way that honors
+God, I believe that I owe everything to Jesus because of how he saved me, and I want my whole life to reflect that. I dream of being
+virtuous, and righteous. I dream of being a man that can support everyone. Which is probably impossible... I want my life to be formed
+around my relationships with people I love. I want to be able to help others see the truth of God, and help them open their heart to the
+truth. I want to go back to raising animals someday. My seccond biggest dream is to raise goats! But i think what I want to do with my life
+is try and help as many people as i can to come to know Jesus, because I believe that the only way to truly change the world is to change
+people's hearts, and Jesus us the only one who can change people's hearts.
 
-1. **Installation**:
-   - Install MkDocs with Python by running: `pip install mkdocs`
-   
-2. **Start a New Project**:
-   - Create a new directory for your project: `mkdocs new [dir-name]`
-
-3. **Serve the Project Locally**:
-   - Navigate to your project directory and run: `mkdocs serve`
-   - This will start a local server. You can view your documentation by opening a web browser and navigating to `http://127.0.0.1:8000/`.
-
-4. **Build the Documentation**:
-   - Once you're ready, build the static files by running: `mkdocs build`
-
-## Hosting on GitHub:
-
-Once you've set up and built your documentation, you can host it on GitHub Pages. 
-
-1. Push your MkDocs project to a GitHub repository.
-2. Build the static site with: `mkdocs build`
-3. Deploy it to GitHub Pages with: `mkdocs gh-deploy`
-4. Your site will then be accessible at `https://[username].github.io/[repository-name]/`.
-
-Remember, each time you make updates to your documentation, run `mkdocs gh-deploy` to see those changes online.
-
-## Dive Deeper:
-
-- `mkdocs -h`: To see a list of all available commands and their purpose.
-- Explore themes, plugins, and extensions to enhance your documentation's appearance and functionality.
-
----
-
-I hope this guide provides a clear introduction to MkDocs and its capabilities, Uncle Moe. Feel free to reach out if you have any questions or need further clarifications. Enjoy documenting!
-
-
-##[About Us](about.md)
-[About Us](about.md)
