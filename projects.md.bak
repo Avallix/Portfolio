@@ -1,73 +1,134 @@
-```markdown
----
-title: Integrating PayPal Payment in MkDocs
-description: A step-by-step guide on how to add a PayPal "Buy Now" button into your MkDocs website.
----
-```
-# Integrating PayPal Payment in MkDocs
+# Projects
 
-While MkDocs is primarily designed for creating documentation, it's possible to add static elements like a PayPal "Buy Now" button to your pages. Here's how you can integrate such a button:
+## Calendar App Development - ComS 309
 
-## 1. Create a PayPal Button
+<div style="float: right; margin-left: 10px; margin-bottom: 10px;">
+    <img src="../files/app.jpg" alt="USACE Logo" style="max-width: 75%;">
+</div>
+ 
+### Project Description:
 
-- Log in to your **PayPal account**.
-- Navigate to `Tools > All Tools > PayPal buttons`.
-- Select "Create new button".
-- Opt for the "Buy Now" button type.
-- Fill out the necessary item details and adjust its appearance as required.
-- Once done, click "Create Button".
+This was a semester long group project with a team 4 students. We selected a theme, chose functional and asthetic requirements, and 
+used the tools shown in class to create our application in 16 weeks.
 
-## 2. Obtain the Button Code
+What we selected was a calendar coordination/ social media application where users can form groups and share events with their friends and 
+group members, while the app automatically coordinates scheduels based on availability.
 
-After creation, PayPal will provide a button code. 
+Documentation: [Project Block Diagram](../files/Block Diagram Assignment _ 1_JK_6.pdf)
 
-You'll find two primary types: 
-- A script-based solution
-- A URL-only version 
+Program Requirements:
 
-For MkDocs, the URL-only method is simpler. Copy the URL, which should resemble:
+-  User Login 
+-  Add events, users, and grous 
+-  Search for users, gropus, and events by name or tag
+-  Search for events by location
+-  Coordination of automatic event invitations
+-  Users can only view events within groups/ invite lists
+-  Users cannot view schedule details of other users
+-  Public events
+-  User to Uder, group, and event char function
+-  Google maps integration
+-  Notification system
 
-```
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_UNIQUE_ID_HERE
-```
+	
+The purpose of this application is to streamline the coordination of availability between friends, coworkers, and groups so that they can 
+have an easier time deciding on times, places, and invitees for events.
 
-## 3. Embed into MkDocs
 
-Incorporate the button into your desired MkDocs content using a Markdown link:
+### My Role:
 
-```markdown
-[Buy Now with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_UNIQUE_ID_HERE)
-```
+I originated the idea for this application, and was instrumental in its higher level design throughout the entire project. When working on code, 
+I programmed the back end with a partner, I integrated API calls, managed the MySQL database, implemented a controller, server, repository model 
+for the back-end's interraction with both the database and the front end.
 
-Alternatively, use an image as a button:
 
-```markdown
-[![PayPal](path/to/your/paypal_image.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_UNIQUE_ID_HERE)
-```
+<div style="; margin-left: 10px; margin-bottom: 10px;">
+    <img src="../files/block.jpg" alt="USACE Logo" style="max-width: 75%;">
+</div>
 
-## 4. Test the Integration
+### Skills or knowledge gained:
 
-After integrating, activate your MkDocs site using:
+On this project I learned to work with Intelli-J, how to write and call API's, manage a MySQL database, back end development, the 
+Springboot framework, the use of postman for back-end development, how to use websockets, and version control with Gitlab. 
 
-```
-mkdocs serve
-```
+### Resources used:
 
-Ensure the payment link redirects to PayPal correctly and showcases the intended item and its price.
+During this project we used tools such as Intelli-J, postman, SQL Workbench, Sprinbboot, Android Studio, Docker, Websockets, and various API's.
 
-## 5. Deployment
+## Pipeline Processor Design - CprE 381
 
-Once tested, deploy your MkDocs site. If you're utilizing a platform like GitHub Pages, ensure your payment button or link functions post-deployment.
+### Project Description:
 
-## Important Considerations
+This was a semester long project in which I and a partner learned about 
+the elements and design of a computer processor, pipelining, and the 
+MIPS assembly architechure. We designed the processor fron the most 
+basic elements, I built the ALU, the barrel shifter and others from 
+basic components like simple logical gates. Those larger elemants were then 
+combined into the different stages of the pipeline untill we had fully 
+implemented the high level schematic design. This was all done in VDHL.
+Our design was fully able to run MIPS architechure instruction code from 
+a binary file, we tested it on various sorting algorithms.
 
-- This approach requires users to leave your MkDocs site to finalize their transaction on PayPal's platform.
-- For a more seamless experience with shopping carts or multiple items, consider an e-commerce-specific platform.
-- Always prioritize user security. Use trustworthy payment gateways and ensure transaction-related pages operate over HTTPS.
+Program Requirements:
 
-Remember, while this guide centers on PayPal, similar principles can be applied to other payment gateways like Stripe or Square. Always consult the official documentation of your chosen payment platform.
-```
+-Processor must be implemented in a pipeline design
+- Processor must run MIPS assembly with few errors 
 
----
+### My Role:
 
-You can save the above content into a `.md` file, for instance, `paypal_integration.md`, and place it within the `docs` directory of your MkDocs project. Ensure you also add the new page to the `nav` section of your `mkdocs.yml` file to make it accessible from the site's navigation menu.
+I and my partner colaboratively designed the higher level logic, we also 
+worked the logical testing and troubleshooting together. I independantly 
+designed the ALU, the registers, and the instruction memory logic.
+
+### Skills or knowledge gained:
+
+The MIPS processor architecture was completly new to me at the begining of this class. 
+I learned how to code in MIPS assembly, how the logic of the processor 
+could be implemented in both single-cycle and pipeline processors, I learned 
+VDHL code used for writing the logical circuits, how to read clock cycle diagrams, 
+and how to troubleshoot the stages of a pipeline.
+
+### Resources used:
+
+This project was entirely writen in VDHL using ModelSim. 
+
+## Roomba Martian Navigator - CprE 288
+
+### Project Description:
+
+This was an incredibly enjoyable project. Again, it was a semester long.
+We designed and implemented the C code to run on an ARM Cortex M4 
+based microcontroller with various inputs and outputs. This 
+microcontroller interfaced with UART, an IR sensor, and a roomba 
+with pressure sensors. Our project was closed and open ended, we 
+were given certian specifications, listed below, but we were able to 
+design the implementation in an open ended way. We were also allowd 
+to define the goal our roomba robot would fulfill.
+
+Program Requirements:
+
+- Microcontroller must controll the roomba to preform specified task
+- Microcontroller must interface with UART and IR sensors externally 
+mounted to the roombs
+- Microcontroller must detect objects using IR and roomba pressure sensors
+-  Microcontroller must correctly identify different kinds of obstacles
+- Microcontroller must use UART to send data to a moniter
+- Microcontroller must use UART to accept commands from external computer
+- Microcontroller must automatically navigate a maze and find an objective
+- Microcontroller must manually navigate a maze and find an objective with a distant pilot controlling it
+
+What we decided to do was build a martian explorer drone designed to catalog the surface of an alien city and identify different buildings.
+
+### My Role:
+
+I did C coding, designed the IR sensor logic, tested the logic for all functions, wrote the script for the automatic 
+maze navigation, and piloted the roomba during the live demonstration. 
+
+### Skills or knowledge gained:
+
+In this project I learned how to interface a microcontroller with different inputs and outputs. I learned how to use pulse width 
+modulation to analog to digital signal, and I increased my competency in C coding.
+
+### Resources used:
+
+C, Visial studio. 

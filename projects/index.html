@@ -87,12 +87,126 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#projects" class="nav-link">Projects</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#calendar-app-development-coms-309" class="nav-link">Calendar App Development - ComS 309</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pipeline-processor-design-cpre-381" class="nav-link">Pipeline Processor Design - CprE 381</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#roomba-martian-navigator-cpre-288" class="nav-link">Roomba Martian Navigator - CprE 288</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
+<h1 id="projects">Projects</h1>
+<h2 id="calendar-app-development-coms-309">Calendar App Development - ComS 309</h2>
+<div style="float: right; margin-left: 10px; margin-bottom: 10px;">
+    <img src="../files/app.jpg" alt="USACE Logo" style="max-width: 75%;">
 </div>
+
+<h3 id="project-description">Project Description:</h3>
+<p>This was a semester long group project with a team 4 students. We selected a theme, chose functional and asthetic requirements, and 
+used the tools shown in class to create our application in 16 weeks.</p>
+<p>What we selected was a calendar coordination/ social media application where users can form groups and share events with their friends and 
+group members, while the app automatically coordinates scheduels based on availability.</p>
+<p>Documentation: <a href="../files/Block Diagram Assignment _ 1_JK_6.pdf">Project Block Diagram</a></p>
+<p>Program Requirements:</p>
+<ul>
+<li>User Login </li>
+<li>Add events, users, and grous </li>
+<li>Search for users, gropus, and events by name or tag</li>
+<li>Search for events by location</li>
+<li>Coordination of automatic event invitations</li>
+<li>Users can only view events within groups/ invite lists</li>
+<li>Users cannot view schedule details of other users</li>
+<li>Public events</li>
+<li>User to Uder, group, and event char function</li>
+<li>Google maps integration</li>
+<li>Notification system</li>
+</ul>
+<p>The purpose of this application is to streamline the coordination of availability between friends, coworkers, and groups so that they can 
+have an easier time deciding on times, places, and invitees for events.</p>
+<h3 id="my-role">My Role:</h3>
+<p>I originated the idea for this application, and was instrumental in its higher level design throughout the entire project. When working on code, 
+I programmed the back end with a partner, I integrated API calls, managed the MySQL database, implemented a controller, server, repository model 
+for the back-end's interraction with both the database and the front end.</p>
+<div style="; margin-left: 10px; margin-bottom: 10px;">
+    <img src="../files/block.jpg" alt="USACE Logo" style="max-width: 75%;">
+</div>
+
+<h3 id="skills-or-knowledge-gained">Skills or knowledge gained:</h3>
+<p>On this project I learned to work with Intelli-J, how to write and call API's, manage a MySQL database, back end development, the 
+Springboot framework, the use of postman for back-end development, how to use websockets, and version control with Gitlab. </p>
+<h3 id="resources-used">Resources used:</h3>
+<p>During this project we used tools such as Intelli-J, postman, SQL Workbench, Sprinbboot, Android Studio, Docker, Websockets, and various API's.</p>
+<h2 id="pipeline-processor-design-cpre-381">Pipeline Processor Design - CprE 381</h2>
+<h3 id="project-description_1">Project Description:</h3>
+<p>This was a semester long project in which I and a partner learned about 
+the elements and design of a computer processor, pipelining, and the 
+MIPS assembly architechure. We designed the processor fron the most 
+basic elements, I built the ALU, the barrel shifter and others from 
+basic components like simple logical gates. Those larger elemants were then 
+combined into the different stages of the pipeline untill we had fully 
+implemented the high level schematic design. This was all done in VDHL.
+Our design was fully able to run MIPS architechure instruction code from 
+a binary file, we tested it on various sorting algorithms.</p>
+<p>Program Requirements:</p>
+<p>-Processor must be implemented in a pipeline design
+- Processor must run MIPS assembly with few errors </p>
+<h3 id="my-role_1">My Role:</h3>
+<p>I and my partner colaboratively designed the higher level logic, we also 
+worked the logical testing and troubleshooting together. I independantly 
+designed the ALU, the registers, and the instruction memory logic.</p>
+<h3 id="skills-or-knowledge-gained_1">Skills or knowledge gained:</h3>
+<p>The MIPS processor architecture was completly new to me at the begining of this class. 
+I learned how to code in MIPS assembly, how the logic of the processor 
+could be implemented in both single-cycle and pipeline processors, I learned 
+VDHL code used for writing the logical circuits, how to read clock cycle diagrams, 
+and how to troubleshoot the stages of a pipeline.</p>
+<h3 id="resources-used_1">Resources used:</h3>
+<p>This project was entirely writen in VDHL using ModelSim. </p>
+<h2 id="roomba-martian-navigator-cpre-288">Roomba Martian Navigator - CprE 288</h2>
+<h3 id="project-description_2">Project Description:</h3>
+<p>This was an incredibly enjoyable project. Again, it was a semester long.
+We designed and implemented the C code to run on an ARM Cortex M4 
+based microcontroller with various inputs and outputs. This 
+microcontroller interfaced with UART, an IR sensor, and a roomba 
+with pressure sensors. Our project was closed and open ended, we 
+were given certian specifications, listed below, but we were able to 
+design the implementation in an open ended way. We were also allowd 
+to define the goal our roomba robot would fulfill.</p>
+<p>Program Requirements:</p>
+<ul>
+<li>Microcontroller must controll the roomba to preform specified task</li>
+<li>Microcontroller must interface with UART and IR sensors externally 
+mounted to the roombs</li>
+<li>Microcontroller must detect objects using IR and roomba pressure sensors</li>
+<li>Microcontroller must correctly identify different kinds of obstacles</li>
+<li>Microcontroller must use UART to send data to a moniter</li>
+<li>Microcontroller must use UART to accept commands from external computer</li>
+<li>Microcontroller must automatically navigate a maze and find an objective</li>
+<li>Microcontroller must manually navigate a maze and find an objective with a distant pilot controlling it</li>
+</ul>
+<p>What we decided to do was build a martian explorer drone designed to catalog the surface of an alien city and identify different buildings.</p>
+<h3 id="my-role_2">My Role:</h3>
+<p>I did C coding, designed the IR sensor logic, tested the logic for all functions, wrote the script for the automatic 
+maze navigation, and piloted the roomba during the live demonstration. </p>
+<h3 id="skills-or-knowledge-gained_2">Skills or knowledge gained:</h3>
+<p>In this project I learned how to interface a microcontroller with different inputs and outputs. I learned how to use pulse width 
+modulation to analog to digital signal, and I increased my competency in C coding.</p>
+<h3 id="resources-used_2">Resources used:</h3>
+<p>C, Visial studio, ARM Cortex M4 technical documentation, IR sensor technical documentation.</p></div>
             </div>
         </div>
 
