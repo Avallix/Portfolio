@@ -1,0 +1,87 @@
+# Engineering Art: Urban Infrastructure Imorovement
+
+##Problem Statement:
+Generally, the public lacks some awareness of engineering problems, specifically the 14 Grand Challenges for Engineering, and their states of 
+development. The understanding that the public has of the Grand Challenges (what they are and current state) influences their enthusiasm 
+and engagement. If they do not understand the Challenges, then they will not have enthusiasm or engagement with their solutions. If they
+ understand them then they will (more likely) have enthusiasm and engagement with their solutions. To address this issue, we aim to develop
+ an interactive installation that appeals to people of all ages and effectively conveys Grand Challenges and their current states of 
+ development. An enthused and engaged public is a source of funding, research (new minds) and application. If the public is more educated, then 
+ Grand Challenges are more likely to be solved in a faster time. We will use an artistic demonstration to engage and educate the public in t
+ he state of urban infrastructure development as a means to ensure they support the research and development of Grand Challenges.
+
+##Project Description:
+The Engineering Grand Challenge we selected is _Restore and Improve Urban Infrastructure_ proposed in the National Academy of Engineers' 
+21st Century Challenges. This list of complex problems speaks to the future of engineering. Each of the challenges represents a problem 
+that signifigantly stands in the way of the developmental progress of our world. The solution we have focused on is developing a tool drastically speed 
+up the process of urban planning. 
+
+Currently, we have decided on the following project:
+
+A 3D urban development design tool that uses a touch-sensitive surface to detect and map physical blocks. Each block corresponds to 
+different types of buildings or structures. When a user places a block on the touch-sensitive surface, a 3D representation of the building 
+or structure appears in real-time on a display, allowing users to visualize and iterate on urban layouts quickly.
+
+##Components:
+
+Touch-sensitive Surface: 
+This will be a specialized piece of hardware designed to sense the location and types of blocks, we plan on using technologies like 
+capacitive or resistive touch panels.
+
+Physical Blocks: 
+Varied shapes, sizes, and possibly colors to represent different building types. These will be embedded with RFID or NFC tags or 
+other markers to make them easily recognizable by the system.
+
+Display and Processing Hardware: 
+A screen to show the 3D rendered model of the urban design. This could be a large monitor, projector, or even AR/VR headsets for a 
+more immersive experience. The hardware will be a processor component capable of taking input from the Touch-sensitive surface, processing the 
+data, and outputting the data needed for our display to visualize it. 
+
+Software Backend: 
+This will process the input from the touch surface, translate block placements into 3D buildings, and render the urban 
+layout on the display. It will also include features like saving designs, modifying building specifications, or simulating various 
+scenarios (like traffic flow or pedestrian pathways).
+
+##Potential Features:
+
+Dynamic Scaling: 
+Allow users to zoom in or out on the display to view the urban design from various scales.
+
+Real-time Analytics: 
+As blocks are placed, the software could provide instant feedback on factors like population density, green space ratio, energy load, or estimated 
+traffic flow.
+
+Different Modes: 
+Switch between day and night views, or even seasonal views, to visualize how the urban space might look in different conditions. 
+
+Scenario Simulations: 
+Simulate scenarios such as traffic during rush hour, evacuation routes during emergencies, or sunlight distribution during different times of the day.
+
+Save & Load Designs: 
+Provide the option for users to save their designs and load them later for further editing or comparison.
+
+##Challenges & Solutions:
+
+This is an ongoing project, there hase not as of yet been any real prototyping, but some anticipated challenges are as follows.
+
+Accuracy of Block Detection: 
+Ensuring the touch surface accurately detects each block's position and orientation might be a challenge. Using high-resolution touch panels or integrating additional sensors might help.
+
+Rendering Speed: 
+The system should be able to render the 3D design in real-time as blocks are placed. Using efficient algorithms and possibly dedicated graphics hardware will be crucial.
+
+User Interface: 
+The software should be intuitive, with clear icons and a minimal learning curve. User testing and feedback will be vital.
+
+Scalability: 
+As urban designs grow complex, ensuring the system can handle large designs without lag or glitches will be crucial. This will require optimized software and possibly robust hardware components.
+
+##My Role:
+Up until now my contribution to our project has primarily been in planing, documentation, and brainstorming. Now as we move into the design 
+and implementation phases I will be primarily contributing by advising on cybersecurity best pracitices and software and hardware security
+reviewing. I will be coding, managing networks, setting up hardware, and assisting in development planning.
+
+The knowledge I have gained has primarily been in the application of the design thinking and development process. We have only just entered 
+the detailed phase of our design process, 
+
+[Download our project plan document as a PDF](../files/sdmay24-17_project_plan-1.pdf)

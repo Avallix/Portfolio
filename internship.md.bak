@@ -1,0 +1,40 @@
+**Omaha District Army Corps of Engineers**  
+*Cyber Security Engineering Technician*  
+**Duration:** May 2023 – July 2023
+
+<div style="float: right; margin-left: 10px; margin-bottom: 10px;">
+    <img src="../files/USACE.jpg" alt="USACE Logo" style="max-width: 50%;">
+</div>
+
+**Tasks:**
+
+During this internship I conducted thorough reviews of electrical and control system implementation specifications. Ensured that 
+implementations adhered to risk management publications such as:
+
+- NIST SP 800-53
+- NIST SP 800-37
+- UFC 4-010-06
+- DoDI 8510.01
+- DoDI 8500.01
+	
+I seamlessly coordinated content across various documents, including design specifications, design analysis, contract specifications, 
+and federal cyber policies. This coordination ensured that projects fully met the policy standards set by the Army Corps of Engineers.
+
+**Field Trip:**
+From July 3 - 7 a co-intern and I went on a trip to Fort Leonard Wood Missouri where we toured the construction of the General 
+Leonard Wood Army Community Hospital, and some of the surrounding IT infrastructure. This was an incerdible trip where I learned 
+about the struggles and dynamics of implementing large scale, interdependant, multimodal controll systems in an environment with a 
+large amount of stakeholders. A major element of this tour was when we entered the older United States Army Hospital at Fort Leonard Wood. 
+Guided by the senior information systems security manager, he walked us through his the process of developing and security testing an 
+isolated control systems board, which is a smaller version of a larger system, containing the network architechure and all major components 
+identical to the larger system. I was guided throught the fire detection and supression system. Using a smaller system to verify and security 
+test elements of a larger system allows for a reduced number of isolated tests before a system design can be verified.
+
+**Knowledge gained:**
+
+- Review of electrical and control system implementation specifications
+- Coordinating content across various documents
+- Understanding standards publications and reading of standards documentation
+- Use of Revit CAD
+- 
+
